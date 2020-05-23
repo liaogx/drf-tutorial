@@ -1,8 +1,8 @@
 ## Django REST framework快速入门
 
-![drf-tutorial](./static/drf-tutorial.png)
-
 > 快速入门Django REST framework，学会开发一套自己的Restful API服务，并且自动生成API文档
+
+![drf-tutorial](./static/drf-tutorial.png)
 
 ​	API接口开发无需费时费力，本课程将从零开始引导同学们快速开发自己的Restful  API接口，从Django项目环境搭建、API接口生成数据、Postman接口测试到DRF认证方式的讲解，通过一个典型的课程信息接口（含增删改查），给同学们讲解完DRF中的序列化（serializers）、视图（viewsets）、路由（routers）、认证（authentication）、权限（permission），为将来前后端分离项目的开发打下基础。
 
