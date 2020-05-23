@@ -88,7 +88,7 @@ def course_detail(request, pk):
             return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-"""二、 类视图 Classed Based View"""
+"""二、 类视图 Class Based View"""
 
 
 class CourseList(APIView):
@@ -142,6 +142,11 @@ class CourseDetail(APIView):
         return Response(s.data, status=status.HTTP_200_OK)
 
     def put(self, request, pk):
+        """
+        :param request:
+        :param pk:
+        :return:
+        """
         obj = self.get_object(pk=pk)
         if not obj:
             return Response(data={"msg": "没有此课程信息"}, status=status.HTTP_404_NOT_FOUND)
@@ -153,6 +158,11 @@ class CourseDetail(APIView):
         return Response(data=s.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, pk):
+        """
+        :param request:
+        :param pk:
+        :return:
+        """
         obj = self.get_object(pk=pk)
         if not obj:
             return Response(data={"msg": "没有此课程信息"}, status=status.HTTP_404_NOT_FOUND)
@@ -160,7 +170,7 @@ class CourseDetail(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-"""三、 通用类视图 Generic Classed Based View"""
+"""三、 通用类视图 Generic Classe Based View"""
 
 
 class GCourseList(generics.ListCreateAPIView):

@@ -22,6 +22,6 @@ urlpatterns = [
     path("api-token-auth/", views.obtain_auth_token),  # 获取Token的接口
     path("api-auth/", include("rest_framework.urls")),  # DRF的登录退出
     path("admin/", admin.site.urls),
-    path("docs/", include_docs_urls(title="DRF API文档", description="Django REST framework入门到实战教程")),
+    path("docs/", include_docs_urls(title="DRF API文档", description="Django REST framework快速入门")),
     path("course/", include("course.urls")),
 ]

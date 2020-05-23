@@ -35,8 +35,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "rest_framework",  # RESTFul API
-    "rest_framework.authtoken",  # drf自带的token认证
+    "rest_framework",  # RESTful API
+    "rest_framework.authtoken",  # DRF自带的token认证
     "course.apps.CourseConfig",
 ]
 
@@ -131,7 +131,7 @@ REST_FRAMEWORK = {
         "rest_framework.renderers.JSONRenderer",
         "rest_framework.renderers.BrowsableAPIRenderer",
     ],
-    "DEFAULT_PARSER_CLASSES": [
+    "DEFAULT_PARSER_CLASSES": [  # 解析request.data
         "rest_framework.parsers.JSONParser",
         "rest_framework.parsers.FormParser",
         "rest_framework.parsers.MultiPartParser",
