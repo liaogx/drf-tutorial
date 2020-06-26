@@ -170,7 +170,7 @@ class CourseDetail(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-"""三、 通用类视图 Generic Classe Based View"""
+"""三、 通用类视图 Generic Class Based View"""
 
 
 class GCourseList(generics.ListCreateAPIView):
